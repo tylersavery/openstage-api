@@ -96,12 +96,16 @@ class Profile(models.Model):
     stages_hosted_at = models.ManyToManyField('Stage', related_name='stages_hosted_at', blank=True)
 
     bio = models.TextField(blank=True, null=True)
-    city = models.CharField(max_length=32)
+    city = models.CharField(max_length=32, blank=True, null=True)
 
     avatar = models.ForeignKey('ImageAsset', blank=True, null=True, on_delete=models.SET_NULL)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)   
 
+    @property
+    def username(self):
+        return self.user.username
+
     def __str__(self):
-        return self.user
+        return self.user.username
