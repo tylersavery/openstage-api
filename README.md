@@ -14,10 +14,9 @@ $ python manage.py migrate
 $ python manage.py runserver
 ```
 
-
 ## Admin
 
-Run this command and follow prompts
+Run this command and follow prompts:
 
 ```
 python manage.py createsuperuser
