@@ -106,6 +106,10 @@ class Profile(models.Model):
     @property
     def username(self):
         return self.user.username
+    
+    @property
+    def avatar_url(self):
+        return self.avatar.url
 
     def __str__(self):
         return self.user.username
