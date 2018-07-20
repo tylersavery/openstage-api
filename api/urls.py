@@ -1,10 +1,12 @@
 from django.conf.urls import url, include
 from rest_framework import routers
-from api.views import user
+from api.views import user, stage, image_asset
 
 
 router = routers.DefaultRouter()
 router.register(r'users', user.UserViewSet)
+router.register(r'stages', stage.StageViewSet)
+router.register(r'images', image_asset.ImageAssetViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
