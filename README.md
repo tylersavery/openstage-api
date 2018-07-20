@@ -26,7 +26,7 @@ python manage.py createsuperuser
 
 ### Watch The Development
 
-I am streaming the project from start to finish on LiveEDU. Here is a link to my [profile](https://www.liveedu.tv/tylersavery/settings/channel/).
+I am streaming the project from start to finish on LiveEDU. Here is a link to my [profile](https://www.liveedu.tv/tylersavery).
 
 ### Overview
 
